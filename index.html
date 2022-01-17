@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Survey</title>
+    <style ></style>
+</head>
+<style type="text/css">
+    body{
+        margin: 0;
+        border: 0;
+        padding:0;
+        background-color: #cccccc;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 100%;
+        
+    }
+    h1{ 
+        margin:0 auto;
+        padding-left: 10px;
+        
+    }
+    h2 {
+        text-align: center;
+        color: #ffff;
+        margin: 0 auto;
+        font-style: italic;
+        font-size: 25px;
+    }
+    .title {
+        color:goldenrod;
+        font-style: italic;
+    }
+    .ttitle {
+        color:gray;
+        font-style: italic;
+    }
+    .questions{
+        background-color: black;
+        padding: 0 5px 5px 1px;
+        margin: 0 auto;
+        max-width: 645px;
+        border-spacing: 0;
+        border-radius: 15px;
+        font-size: 16px;
+        
+        }
+    p{
+        color: #ffff; 
+    }
+    .a {
+        color: goldenrod;
+    }
+    .button {
+        background-color: #1408b8;
+        color: #ffff;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 10px 10px 10px 250px;
+    }
+    .button:hover{
+        background-color: orange;
+        color:black;
+    }
+    .answer{
+        color: goldenrod;
+    }
+    
+</style>
+
+
+<body>
+
+    <form class="questions" action="" name="my form" method="POST">
+
+        <h1><a href="https://www.designtechnyc.com/"><img src="img/DTLOGOModernFinal.png" alt="DesignTech" width=640px></a></h1>
+        <h2>HelpDesk Survey</h2>
+        <p>Full name: <input type="text" name="fullname"></p>
+
+        <!-- Name has to have the same value-->
+        <p> Was the problem or task resolved to your satisfaction?<br>
+        <input type="radio" id="smile" name="satisfaction" value="1">
+        <label for="1">&#128513</label><br>
+        <input type="radio" id="smileb" name="satisfaction" value="2">
+        <label for="2">&#128522</label><br>
+        <input type="radio" id="smilec"name="satisfaction" value="3">
+        <label for="3">&#128528</label><br>
+        <input type="radio" id="smiled" name="satisfaction" value="4">
+        <label for="4">&#128532</label><br>
+        <input type="radio" id="smilee" name="satisfaction" value="5">
+        <label for="5">&#128546</label></p>
+
+        <p> Was the problem or task resloved in a timely manner?<br>
+        
+        <input type="radio" id="a" name="timely" value="1">
+        <label for="1">1</label><br>
+        <input type="radio" name="timely" value="2">
+        <label for="2">2</label><br>
+        <input type="radio" name="timely" value="3">
+        <label for="3">3</label><br>
+        <input type="radio" name="timely" value="4">
+        <label for="4">4</label><br>
+        <input type="radio" name="timely" value="5">
+        <label for="5">5</label></p>
+
+       <p class="fourQ"> How easy were you able to contact us?<br>
+        <input type="radio" name="contact" value="Very Easy">
+        <label for="Very Easy">Very Easy</label><br>
+        <input type="radio" name="contact" value="Easy">
+        <label for="Easy">Easy</label><br>
+        <input type="radio" name="contact" value="Difficult">
+        <label for="Difficult">Difficult</label><br>
+        <input type="radio" name="contact" value="Very Difficult">
+        <label for="Very Difficult">Very Difficult</label><br>
+        <input type="radio" name="contact" value="I do not know how">
+        <label for="I do not know how">I do not know how</label></p>
+
+        <p>How would you describe your experience with us?<br>
+        <textarea rows="5" cols="40"></textarea></p>
+        <input class="button" type="Submit">
+    </form>
+</body>
+</html>
